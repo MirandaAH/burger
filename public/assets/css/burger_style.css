@@ -1,31 +1,50 @@
 html, body {
   background-color: #E2BC35;
 }
-#notEaten {
+ul {
   list-style: none;
 }
-#notEaten li span {
-  background-color: beige;
-  padding: 30px;
-  display: inline-block;
-  margin-left: 130px;
-  width: 200px;
+
+#notEaten span, #notEaten form {
+  float: right;
+}
+#notEaten span {
+  background-color: #F9A049;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 6px;
+  padding: 20px 5px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}
+#notEaten li {
+  clear: both;
+}
+#notEatenBtn {
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: #D9314B;
+  border: none;
+  margin-left: 15px;
+  width: 105px;
+  padding: 13px 25px;
+}
+
+#eaten li {
+  background-color: #FFE191;
+  color: #AAA;
+  width: 250px;
+  margin-bottom: 6px;
+  padding: 13px 15px;
+  font-size: 12px;
+  border: none;
   border-radius: 5px;
 }
 
-#eaten {
-
-}
-
-.create-update-form{
-  padding: 5px;
-  margin: 5px;
-}
-
 #burger_name {
-
-}
-
-#devour {
-  display:inline-block
+  margin-top: 25px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: -5px;
 }
