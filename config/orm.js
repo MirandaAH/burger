@@ -1,4 +1,4 @@
-var connection = require('./connection.js');
+var connection = require('../config/connection.js');
 
 
 function printQuestionMarks(num) {
@@ -23,16 +23,16 @@ function objToSql(ob) {
 
 
 var orm = {
-  selectAll: function (tableName, cb){
+  all: function (tableName, cb){
     var queryString = "SELECT * FROM " + tableName + ";";
     connection.query(queryString, function (err, results) {
       if(err){
         throw err;
       }
-      cb(results)
+      cb(results);
     });
   },
-  insertOne: function(tableName, column, value, cb){
+  create: function(tableName, column, value, cb){
     var queryString = "INSERT INTO " + tableName;
     queryString += " (";
     queryString += column.toString();
@@ -43,25 +43,25 @@ var orm = {
 
     console.log(queryString);
 
-    connection.query(queryString, [tableName, column, value], function(err, results){
+    connection.query(queryString, [value], function(err, results){
       if(err){
         throw err;
       }
-      cb(results)
+      cb(results);
     });
   },
-  updateOne: function(tableName, value, condition, cb) {
+  update: function(tableName, value, condition, cb) {
     var queryString = "UPDATE " + tableName;
     queryString += " SET " ;
     queryString += objToSql(value);
-    queryString += " WHERE "
+    queryString += " WHERE ";
     queryString += condition;
     console.log(queryString);
     connection.query(queryString, function(err, results){
       if(err){
         throw err;
       }
-      cb(results)
+      cb(results);
     })
   }
 }

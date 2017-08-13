@@ -9,8 +9,8 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Method Override
-var methOver = require('method-override');
-app.use(methOver('_method'));
+var methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 
 // Express Handlebars
 var expHbars = require('express-handlebars');

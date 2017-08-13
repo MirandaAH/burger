@@ -18,7 +18,8 @@ html, body {
 }
 
 .create-update-form{
-
+  padding: 5px;
+  margin: 5px;
 }
 
 #burger_name {
