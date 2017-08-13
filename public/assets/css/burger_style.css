@@ -1,0 +1,30 @@
+html, body {
+  background-color: #E2BC35;
+}
+#notEaten {
+  list-style: none;
+}
+#notEaten li span {
+  background-color: beige;
+  padding: 30px;
+  display: inline-block;
+  margin-left: 130px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+#eaten {
+
+}
+
+.create-update-form{
+
+}
+
+#burger_name {
+
+}
+
+#devour {
+  display:inline-block
+}
