@@ -1,3 +1,4 @@
+var orm = require('./config/orm.js')
 // Express
 var express = require('express');
 var app = express();
