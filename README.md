@@ -13,7 +13,7 @@
 ## Usage
 
 ```
-Write the name of your favorite dream burger and see it appear on you're undevoured list.
+Write the name of your favorite dream burger and see it appear on your "undevoured" list.
 Click the button to log when you've finally devoured that sucker!
 ```
 
